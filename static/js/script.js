@@ -121,14 +121,14 @@ function back() {
   info.classList.add("hidden");
 }
 
-document.addEventListener('keydown', test);
+document.addEventListener('keydown', arrows);
 
 var background = document.getElementById('background'),
   colors = ['#E94B3CFF', '#228FCF', '#E8EBC2', '#F3EA1B'];
 
 
 
-function test(x) {
+function arrows(x) {
   var key = x.key;
 
   if (key == "ArrowLeft") {
