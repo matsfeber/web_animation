@@ -1,3 +1,3 @@
 # web_animation
 
-![GitHub Logo](/static/images/wiet.png)
+![GitHub Logo](/static/images/blitzed.jpg)
