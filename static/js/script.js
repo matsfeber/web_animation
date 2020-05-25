@@ -32,7 +32,7 @@ function hide() {
 // Voeg een EventListener toe op de verschillende drugsknoppen.
 document.getElementById("weed").addEventListener("click", weed);
 document.getElementById("cocaine").addEventListener("click", cocaine);
-document.getElementById("captagon").addEventListener("click", captagon);
+document.getElementById("meth").addEventListener("click", meth);
 
 //Eventlisteners voor het portret van hitler, deze zorgen ervoor dat als je erover hovert er een h4 tevoorschijn komt, de 2 eventlistener zorgt ervoor dat deze verdwijnt als je niet meer hovert.
 document.getElementById("hitler").addEventListener("mouseenter", show);
@@ -62,13 +62,13 @@ function cocaine() {
 }
 
 // functie die bepaalde elementen in de svg laat zien door de class hidden te verwijderen.
-function captagon() {
+function meth() {
   joint.classList.add("hidden");
   rode_ogen.classList.add("hidden");
   coke.classList.add("hidden");
   oog_rechts.classList.add("hidden");
   oog_links.classList.add("hidden");
-  drugs = "captagon";
+  drugs = "meth";
   changeText();
 }
 
@@ -108,11 +108,11 @@ function changeText() {
   } else if (drugs == "coke") {
     document.getElementById("titel").innerHTML = "Cocaine";
     document.getElementById("titel").setAttribute("data-text", "Cocaine")
-    document.getElementById("alinea").innerHTML = "During World War 2 cocaine and Meth were still legal, it wasn’t like the cocaine we know nowadays. It was a liquid that soldiers mixed with rum to stay awake and become machines. The drug was used by all fronts and most of it was produced in Amsterdam."
-  } else if (drugs == "captagon") {
-    document.getElementById("titel").innerHTML = "Captagon";
-    document.getElementById("titel").setAttribute("data-text", "Captagon")
-    document.getElementById("alinea").innerHTML = ""
+    document.getElementById("alinea").innerHTML = "During World War 2 cocaine was still legal, it wasn’t like the cocaine we know nowadays. It was a liquid that soldiers mixed with rum to stay awake and become machines. The drug was used by all fronts and most of it was produced in Amsterdam."
+  } else if (drugs == "meth") {
+    document.getElementById("titel").innerHTML = "Meth";
+    document.getElementById("titel").setAttribute("data-text", "Meth")
+    document.getElementById("alinea").innerHTML = "Methamphetamine was used early on as a medical treatment for narcolepsy, asthma and as a weight-loss drug. During World War II, the Allies and Axis powers both used the drug to keep troops awake. After the war, meth use increased dramatically, even after it was outlawed by the United States in 1970. "
   }
 }
 
